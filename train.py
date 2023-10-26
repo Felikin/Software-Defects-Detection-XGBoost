@@ -16,7 +16,7 @@ output_file = 'xgb_model.bin'
 
 
 # Data preparation
-df_full_train = pd.read_csv('/kaggle/input/playground-series-s3e23/train.csv', index_col = "id")
+df_full_train = pd.read_csv('data/train.csv', index_col = "id")
 y = df_full_train.pop("defects")
 X = np.log1p(df_full_train)
 
@@ -25,7 +25,7 @@ def cross_validation(model):
     
     #initiate prediction arrays and score lists
     train_scores, val_scores = [], []
-    kf = StratifiedKFold(shuffle=True, random_state=rando, n_splits = 5)
+    kf = StratifiedKFold(shuffle=True, random_state=random_state, n_splits = 5)
     
     for fold, (train_idx, val_idx) in enumerate(kf.split(X, y)):
         #Train dataset
