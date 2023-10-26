@@ -31,7 +31,7 @@ software = {
 }
 
 
-response = requests.post(url, json=customer).json()
+response = requests.post(url, json=software).json()
 print(response)
 
 if response['defects'] == True:
