@@ -1,0 +1,129 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Binary Classification with a Software Defects Dataset | Kaggle</title>
+  <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+  <meta name="description" content="Playground Series - Season 3, Episode 23" />
+  <meta name="turbolinks-cache-control" content="no-cache" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC" />
+  <script nonce="rXPpiKA2DeJNqYFz2v3jPg==" type="text/javascript">
+    window["pageRequestStartTime"] = 1698285555914;
+    window["pageRequestEndTime"] = 1698285555944;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" /><link rel="preconnect" href="https://stats.g.doubleclick.net" /><link rel="preconnect" href="https://storage.googleapis.com" /><link rel="preconnect" href="https://apis.google.com" />
+  <link href="/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="manifest" href="/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/icon?family=Google+Material+Icons&display=block"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/icon?family=Google+Material+Icons&display=block"
+    rel="stylesheet" media="print" id="async-google-font-1" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="stylesheet" media="print" id="async-google-font-2" />
+  <script nonce="rXPpiKA2DeJNqYFz2v3jPg==" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+    <link rel="stylesheet" type="text/css" href="/static/assets/vendor.css?v=4cb495c94b5c507c97ef" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=7dd02baeefe6b778860b" />
+  
+    
+ 
+      <script nonce="rXPpiKA2DeJNqYFz2v3jPg==">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script>
+    <script nonce="rXPpiKA2DeJNqYFz2v3jPg==">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-T7QHS60L4Q', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Competitions'
+        });
+    </script>
+    <script nonce="rXPpiKA2DeJNqYFz2v3jPg==" async src="https://www.googletagmanager.com/gtag/js?id=G-T7QHS60L4Q"></script>
+
+  
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kaggle" />
+        <meta name="twitter:creator" content="@kaggle" />
+    <meta name="og:url" content="https://kaggle.com/competitions/playground-series-s3e23" />
+    <meta name="og:title" content="Binary Classification with a Software Defects Dataset" />
+    <meta name="og:description" content="Playground Series - Season 3, Episode 23" />
+
+
+  <meta name="twitter:site" content="@Kaggle" /> 
+  
+    
+
+  
+    
+
+  
+    
+
+
+    <script nonce="rXPpiKA2DeJNqYFz2v3jPg==">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="rXPpiKA2DeJNqYFz2v3jPg==" src="https://apis.google.com/js/api.js" defer
+    async></script>
+  <script nonce="rXPpiKA2DeJNqYFz2v3jPg==" src="/static/assets/runtime.js?v=4ee08293f70a878632c5" data-turbolinks-track="reload"></script>
+  <script nonce="rXPpiKA2DeJNqYFz2v3jPg==" src="/static/assets/vendor.js?v=15ea379e806349bc85e2" data-turbolinks-track="reload"></script>
+  <script nonce="rXPpiKA2DeJNqYFz2v3jPg==" src="/static/assets/app.js?v=191b1f067b20573d094c" data-turbolinks-track="reload"></script>
+    <script nonce="rXPpiKA2DeJNqYFz2v3jPg==" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '0'
+      }
+    </script>
+</head>
+
+<body data-turbolinks="false">
+  <main>
+    
+
+
+
+
+
+<div id="site-container"></div>
+
+<div id="site-body" class="hide">
+    
+
+
+</div>
+
+
+
+
+  </main>
+</body>
+
+</html>
