@@ -1,5 +1,6 @@
 import pickle
 import pandas as pd
+from flask import request
 from flask import Flask
 from flask import jsonify
 
@@ -13,7 +14,7 @@ app = Flask('midterm-project')
 @app.route('/predict', methods=['POST'])
 def predict():
     software = request.get_json()
-    X = pd.read_json(software)
+    X = pd.DataFrame([software])
     y_pred = model.predict_proba(X)[0, 1]
     defects = y_pred >= 0.5
 

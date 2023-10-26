@@ -17,8 +17,8 @@ output_file = 'xgb_model.bin'
 
 # Data preparation
 df_full_train = pd.read_csv('data/train.csv', index_col = "id")
-y = df_full_train.pop("defects")
-X = np.log1p(df_full_train)
+X = df_full_train.copy()
+y = X.pop("defects")
 
 # Validation
 def cross_validation(model):
@@ -66,7 +66,7 @@ XGBClassifier(random_state = random_state,
                         eta = eta, max_depth = d,
                         scale_pos_weight = scale_pos_weight)
 model.fit(X, y)
-
+df_test = pd.read_csv("data/test.csv")
 with open(output_file, 'wb') as f_out:
     pickle.dump((model), f_out)
 
