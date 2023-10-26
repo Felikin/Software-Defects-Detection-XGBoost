@@ -2,7 +2,7 @@ FROM python:3.9-slim
 
 RUN pip install pipenv
 
-WORKDIR /midterm-ml-zoomcamp
+WORKDIR /app
 COPY ["Pipfile.lock", "Pipfile", "./"]
 
 RUN pipenv install --system --deploy
