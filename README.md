@@ -17,7 +17,7 @@ In this project, I have worked on a Kaggle binary classification contest from th
 
 ## Dataset
 
-### Find
+### Where to find
 Data is available in the [data](/data) folder, you can find it in the [contest url](https://www.kaggle.com/competitions/playground-series-s3e23/overview) also.
 
 ### Data Explanation
