@@ -18,7 +18,7 @@ In this project, I have worked on a Kaggle binary classification contest from th
 ## Dataset
 
 ### Find
-Data is available in the /data folder, you can find it in the [contest url](https://www.kaggle.com/competitions/playground-series-s3e23/overview) also.
+Data is available in the [data](/data) folder, you can find it in the [contest url](https://www.kaggle.com/competitions/playground-series-s3e23/overview) also.
 
 ### Data Explanation
 Data comes from McCabe and Halstead features extractors of
@@ -80,7 +80,7 @@ To run the image run
 ```
 docker run -it --rm -p 9696:9696 {build-tag}
 ```
-then in another terminal run python ```python predict-test.py```. If you want to use other data you can find it in at ```"data/test.csv"``` file and replace the values of the attributes.
+then in another terminal run python ```python predict-test.py```. If you want to use other data you can find it in at ```"/data/test.csv"``` file and replace the values of the attributes.
 
 ## Sample Output
 ![Sample of the project running locally](/data/sample_output.png)
