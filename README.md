@@ -24,8 +24,7 @@ Data is available in the [data](/data) folder, you can find it in the [contest u
 Data comes from McCabe and Halstead features extractors of
 source code.  These features were defined in the 70s in an attempt to objectively characterize code features that are associated with software quality.  The nature of association is under dispute. Datasets are synthetically generated from real-world data
 
-- Number of attributes: 22 (5 different lines of code measure, 
-- 3 McCabe metrics, 4 base Halstead measures, 8 derived Halstead measures, a branch-count, and 1 goal field)
+- Number of attributes: 22 (5 different lines of code measure, 3 McCabe metrics, 4 base Halstead measures, 8 derived Halstead measures, a branch-count, and 1 goal field)
 
 ### Attribute Information
 1. loc             : numeric - McCabe's line count of code
