@@ -39,7 +39,7 @@ A [notebook](/notebook.ipynb) where EDA, parameter tunning, cross-validation and
 Python [script](/predict.py) where we charge the model and implement ```Flask``` for web app service
 
 ## predict_test.py
-Python [script](/predict_test.py) that you should run to test the model. see [README.md](/README.md/Usage)
+Python [script](/predict_test.py) that you should run to test the model. see [README.md](/README.md)
 
 ## train.py
 Python [script](/train.py) where choosen model was trained and saved with ```pickle```.
