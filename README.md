@@ -13,7 +13,8 @@ This repository contains the code and materials for the midterm project of the Z
 ## Project Description
 
 In this project, I have worked on a Kaggle binary classification contest from the [2023 edition of Kaggle's Playground Series](https://www.kaggle.com/competitions/playground-series-s3e23/overview). The main goal is predict defects in C programs given various attributes about the code.
-XGBoost model was choosen based on the AUC ROC curve criteria. You can check tunning parameters, cross-validation, EDA and other models explored in this [notebook](/notebook.ipynb).
+
+XGBoost model was choosen based on the AUC ROC curve criteria. You can check tunning parameters, cross-validation, EDA and other models explored on this [notebook](/notebook.ipynb).
 
 ## Dataset
 
